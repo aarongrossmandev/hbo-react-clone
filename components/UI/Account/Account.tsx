@@ -33,12 +33,12 @@ const Account = (props: any) => {
            </div>
            <div className="account__menu">
             <ul className="account__main">
-                <li><a href="/" className="active">My List</a></li>
+                <li><a href="#" className="active">My List</a></li>
             </ul>
             <div className="side-nav__divider"/>
             <ul className="account__main">
-                <li><a href="/">Account</a></li>
-                <li><a href="/">Sign Out</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Sign Out</a></li>
             </ul>
            </div>
         </div>

@@ -1,4 +1,4 @@
-const SideNav = (props) => {
+const SideNav = (props: any) => {
   return (
     <div className="side-nav">
       <div className="side-nav__close-btn">
@@ -6,42 +6,42 @@ const SideNav = (props) => {
       </div>
       <ul className="side-nav__main">
         <li>
-          <a href="/" className="active">
+          <a href="#" className="active">
             Home
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Series
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Movies
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Originals
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Just Added
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Last Chance
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Coming Soon
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Trending Now
           </a>
         </li>
@@ -49,92 +49,92 @@ const SideNav = (props) => {
       <div className="side-nav__divider" />
       <ul className="side-nav__main">
         <li>
-          <a href="/">
+          <a href="#">
             Action
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Animation
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Comedy
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Crime
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Documentaries
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Drama
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Fantasy & Sci-fi
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Horror
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             International
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Kids & Family
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Latino
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Music
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             News/Talk
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Reality
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Romance
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Shorts
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#">
             Sports
           </a>
         </li>
         <li>
-          <a href="/"></a>
+          <a href="#"></a>
         </li>
       </ul>
     </div>
