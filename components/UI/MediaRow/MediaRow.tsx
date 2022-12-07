@@ -36,7 +36,7 @@ const MediaRow = (props: any) => {
     return loadingData
       ? loopComp(<Skeleton />, 10)
       : movies.map((movie) => {
-        return <Thumbnail movieData={movie} />
+        return <Thumbnail movieData={movie} key={movies}/>
       });
   };
   return (
