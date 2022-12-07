@@ -6,7 +6,7 @@ import MainLayout from "../components/Layouts/MainLayout";
 import FeaturedMedia from "../components/UI/FeaturedMedia/FeaturedMedia";
 import MediaRow from "../components/UI/MediaRow/MediaRow";
 import AuthCheck from "../components/AuthCheck";
-import LazyLoad from "react-lazyload";
+import LazyLoad from 'react-lazy-load';
 import Placeholders from "../components/UI/Placeholders/Placeholders";
 
 export default function Home() {
