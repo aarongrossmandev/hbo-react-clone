@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Utilities.js", "components/HBOProvider.js", "components/HBOProvider.js", "pages/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js", "pages/index.js", "pages/index.js", "pages/index.js", "pages/create.js", "components/UI/Login/Login.js", "components/HBOProvider.js", "components/Utilities.js", "components/HBOProvider.js", "components/HBOProvider.js", "pages/index.js"],
   "exclude": ["node_modules"]
 }
