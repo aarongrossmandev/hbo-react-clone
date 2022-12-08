@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import {shuffleArray} from '../../Utilities';
+import Placeholders from "../Placeholders/Placeholders";
+
 
 const MediaRow = (props: any) => {
   const [loadingData, setLoadingData] = useState(true);
@@ -70,7 +72,7 @@ const Thumbnail = (props: any) => {
       }
   return (
     <div className="media-row__thumbnail">
-      <img src={`https://image.tmdb.org/t/p/w${thumbSize(props.type)}/${props.movieData.poster_path}`}/>
+      <img src={`https://image.tmdb.org/t/p/w${thumbSize(props.type)}/${props.movieData.poster_path}`} loading="lazy" alt="image" />
       <div className="media-row__top-layer">
         <i className="fas fa-play" />
       </div>
