@@ -10,6 +10,7 @@
     visibility: hidden;
     transition: opacity .4s ease-in-out;
     z-index: 13;
+    overflow: auto;
     &--active{
         visibility: visible;
         opacity: 1;
@@ -112,8 +113,17 @@
     }
   }
   
-  // @media (max-width: 600px){
-  //     .foryou-list {
-  //         padding: 10px 5px 10px 10px;
-  //     }
-  // }
+@media only screen and (max-width: 600px) {
+  .search-modal{
+    width: 100%;
+    padding: 20px;
+    &__input{
+      margin-top: 30px;
+      width: 100%;
+      font-size: 1.9rem;
+    }
+    &__close-btn{
+      font-size: 1.9rem;
+    }
+  }
+}

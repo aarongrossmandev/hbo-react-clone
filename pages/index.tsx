@@ -7,22 +7,30 @@ import FeaturedMedia from "../components/UI/FeaturedMedia/FeaturedMedia";
 import MediaRow from "../components/UI/MediaRow/MediaRow";
 import AuthCheck from "../components/AuthCheck";
 
-
 export default function Home() {
   const globalState = useStateContext();
   const router = useRouter();
   useEffect(() => {}, []);
   return AuthCheck(
     <MainLayout>
-      <FeaturedMedia />
+      <FeaturedMedia
+        mediaUrl="https://www.youtube.com/embed/qEVUtrk8_B4?autoplay=1&mute=1&loop=1&start=17"
+        title="John Wick: Chapter 4"
+        location="In theaters and on HBO MAX. Streaming throughout 2023."
+        linkUrl="/movie/603692"
+        type="front"
+        mediatype={'movie'}
+        mediaId={603692}
+      />
       <MediaRow
         title="Movies"
         type="large-h"
         endpoint="discover/movie?sort_by=popularity.desc&primary_release_year=2021"
       />
-      
+
       <MediaRow
         title="Series"
+        mediaType="series"
         type="small-h"
         endpoint="discover/tv?sort_by=popularity.desc&primary_release_year=2022"
       />

@@ -38,6 +38,10 @@ export default function CreateUser() {
       router.push('/login')
     }
   }
+
+  const cancelButton = () => {
+    router.push('/login')
+  }
   return (
     <div>
       <div className="create-user">
@@ -76,7 +80,7 @@ export default function CreateUser() {
             </div>
 
           <div className="create-user__buttons">
-            <button className="create-user__cancel">Cancel</button>
+            <button className="create-user__cancel" onClick={cancelButton}>Cancel</button>
             <button className="create-user__save" onClick={saveUser}>Save</button>
           </div>
       </div>

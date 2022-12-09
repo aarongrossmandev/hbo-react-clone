@@ -37,7 +37,7 @@ const Login = () => {
     }
   }
   const createUser = () => {
-    router.push('/')
+    router.push('/create')
   }
 
 
