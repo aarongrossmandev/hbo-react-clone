@@ -3,7 +3,7 @@ import axios from "axios";
 import { shuffleArray } from "../../Utilities";
 import Link from "next/link";
 
-const MediaRow = (props: any) => {
+const MediaRow = (props) => {
   const [loadingData, setLoadingData] = useState(true);
   const [movies, setMoviesData] = useState([]);
 
@@ -27,7 +27,7 @@ const MediaRow = (props: any) => {
       });
   }, [props.updateData]);
 
-  const loopComp = (comp: any, digit: any) => {
+  const loopComp = (comp, digit) => {
     let thumbnails = [<Skeleton key={'a'}/>, <Skeleton key={'b'}/>, <Skeleton key={'c'}/>, <Skeleton key={'d'}/>, <Skeleton key={'e'}/>, <Skeleton key={'f'}/>, <Skeleton key={'g'}/>, <Skeleton key={'h'}/>,
     <Skeleton key={'i'}/>, ];
     // for (let index = 1; index <= digit; index++) {
@@ -35,7 +35,7 @@ const MediaRow = (props: any) => {
     // }
     return thumbnails;
   };
-  const showThumbnails = (type: any) => {
+  const showThumbnails = (type) => {
     return loadingData
       ? loopComp(<Skeleton />, 10)
       : movies.map((movie) => {
@@ -56,8 +56,8 @@ const MediaRow = (props: any) => {
   );
 };
 
-const Thumbnail = (props: any) => {
-  const thumbSize = (type: any) => {
+const Thumbnail = (props) => {
+  const thumbSize = (type) => {
     if (type === "large-v") {
       return "400";
     }

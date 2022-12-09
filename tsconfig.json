@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/UI/SearchModal/SearchModal.js", "components/UI/CastInfo/CastInfo.js", "pages/index.js", "pages/index.js", "pages/index.js", "pages/index.js", "pages/create.js", "components/UI/Login/Login.js", "components/HBOProvider.js", "components/Utilities.js", "components/HBOProvider.js", "components/HBOProvider.js", "pages/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Hooks/useMounted.js", "components/UI/CastInfo/CastInfo.js", "components/UI/FeaturedMedia/FeaturedMedia.js", "components/UI/GenreNav/GenreNav.js", "components/UI/Header/Header.js", "components/UI/MediaRow/MediaRow.js", "pages/login.js", "pages/index.js", "pages/_document.hs", "pages/_app.js", "components/UI/Account/Account.js", "pages/[mediaType]/genre/[genre_id].js", "pages/[mediaType]/index.js", "pages/[mediaType]/[id].js", "components/UI/SearchModal/SearchModal.js", "components/UI/CastInfo/CastInfo.js", "pages/index.js", "pages/index.js", "pages/index.js", "pages/index.js", "pages/create.js", "components/UI/Login/Login.js", "components/HBOProvider.js", "components/Utilities.js", "components/HBOProvider.js", "components/HBOProvider.js", "pages/index.js"],
   "exclude": ["node_modules"]
 }

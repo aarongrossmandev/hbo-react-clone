@@ -2,7 +2,7 @@ import { useStateContext } from "../../HBOProvider";
 import Link from "next/link";
 import { useState } from "react";
 
-const GenreNav = (props: any) => {
+const GenreNav = (props) => {
   // const globalState = useStateContext();
   const [activeNav, setActiveNav] = useState(false);
   setTimeout(() => setActiveNav(true), 100);
@@ -14,8 +14,8 @@ const GenreNav = (props: any) => {
   );
 };
 
-const GenreList = (props: any) => {
-  return props.genresData.map((item: any) => {
+const GenreList = (props) => {
+  return props.genresData.map((item) => {
     return (
       <li key={item.id}>
         <Link href={`/${props.mediaType}/genre/${item.id}`}>{item.name}</Link>
